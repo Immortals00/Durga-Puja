@@ -1,6 +1,6 @@
-#include<graphics.h>
+#include<Graphics.h>
 
-#include<conio.h>
+#include<conio>
 
 #include<dos.h>
 
@@ -8,16 +8,16 @@ main()
 
 {
 	
-  initwindow(800,800);
+ 
   
   int bdr = 8, x=300;
   setcolor(bdr);
 //  line(380,0,380,800); //divider
   circle(380,380,10);  //tilak
   delay(x);
-  setfillstyle(1,RED);
+  setfillstyle(1,WHITE);
   delay(x);
-  floodfill(380,380,bdr);
+  floodfill(380,380,WHITE);
   delay(x);
 
   //////////     right eye     /////////////
@@ -27,29 +27,29 @@ main()
   delay(x);
   circle(450,390,19);
   delay(x);
-  circle(450-5,390+5,7);
+  circle(450-5,380+2,7);
   delay(x);
   setfillstyle(1,BLACK);
   floodfill(450+3,390+5,bdr);
-  delay(x);
-  setfillstyle(1,WHITE);
+  delay(x)
+  setfillstyle(1,BLACK);
   floodfill(450-20,390+5,bdr);
   delay(x);
-  setfillstyle(1,WHITE);
-  floodfill(450-5,390+5,bdr);
+  setfillstyle(1,BLACK);
+  floodfill(450+5,390+5,bdr);
 
  
   //////////     left eye     /////////////  
-  arc(320,340,190,270+31,70);
+  arc(320,340,190,270+29,70);
   delay(x);
-  arc(240,510,43,90,160);
+  arc(240,510,45,90,160);
   delay(x);
-  circle(310,390,19); 
+  circle(310,400,19); 
   delay(x);
   circle(310+5,390+5,7);
   delay(x);
   setfillstyle(1,BLACK);
-  floodfill(310-5,390,bdr);
+  floodfill(300-5,390,bdr);
   delay(x);
   setfillstyle(1,WHITE);
   floodfill(310+20,390+5,bdr);
@@ -59,7 +59,7 @@ main()
 
  
   /////////      nose     ////////////
-  ellipse(380,360,260,280,50,125);
+  ellipse(380,360,260,280,125);
   delay(x);
  
 
@@ -109,7 +109,7 @@ main()
   floodfill(380,280,bdr);
   delay(x);
   setfillstyle(1,RED);
-  floodfill(380-2,280+20,bdr);
+  floodfill(350-2,280+20,bdr);
   delay(x);
   
   setfillstyle(1,WHITE);
@@ -118,8 +118,6 @@ main()
   
   settextstyle(9,0,6);
   setcolor(BLACK);
-  setbkcolor(WHITE);
-  outtextxy(140+80,700,"Durga Puja");
-  getch();
-  return 0;
+  setbcolor(WHITE);
+  outtextxy(140+80,700,"Durga Puja")
 }
