@@ -31,7 +31,7 @@ main()
   delay(x);
   setfillstyle(1,BLACK);
   floodfill(450+3,390+5,bdr);
-  delay(x)
+  delay(x);
   setfillstyle(1,BLACK);
   floodfill(450-20,390+5,bdr);
   delay(x);
